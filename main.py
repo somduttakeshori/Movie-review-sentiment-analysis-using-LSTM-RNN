@@ -75,8 +75,5 @@ if st.button('Classify'):
         st.subheader(f'Sentiment: {sentiment}')
         st.write(f'**Prediction Confidence Score:** {score:.4f}')
         
-        # Optional diagnostic tool: visualising how the model saw your sentence
-        '''with st.expander("See how the model interpreted your text"):
-            st.write(decode_review(preprocessed_input[0]))'''
 else:
     st.write('Please enter a movie review.')
